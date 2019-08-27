@@ -38,6 +38,7 @@ public class CookieUtil {
 	 */
 	public static String getCookie(HttpServletRequest request, String name) {
 		String value = null;
+		System.out.println("1");
 		Cookie[] cookies = request.getCookies();
 		if (null != cookies) {
 			for (Cookie cookie : cookies) {
